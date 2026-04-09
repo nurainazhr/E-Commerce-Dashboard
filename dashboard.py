@@ -61,7 +61,7 @@ def create_rfm_df(df):
     return rfm
 
 
-all_df=pd.read_csv('/Users/nurainaz/Documents/analisis data/all_data.csv')
+all_df=pd.read_csv('/Users/nurainaz/Documents/analisis data/assignment_analisis_data/all_data.csv')
 all_df["order_purchase_timestamp"] = pd.to_datetime(all_df["order_purchase_timestamp"])
 all_df.sort_values(by='order_purchase_timestamp', inplace=True)
 all_df.reset_index(inplace=True)
